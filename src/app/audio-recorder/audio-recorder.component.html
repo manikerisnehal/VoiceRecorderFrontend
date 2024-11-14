@@ -1,0 +1,8 @@
+<div class="recorder">
+  <p>{{ recordingStatus }}</p>
+
+  <!-- <h1>{{whatIsError}}</h1> -->
+  <button (click)="startRecording()">Start</button>
+  <button (click)="stopRecording()">Stop</button>
+  <button *ngIf="recordingPath" (click)="playRecording()">Play</button>
+</div>
